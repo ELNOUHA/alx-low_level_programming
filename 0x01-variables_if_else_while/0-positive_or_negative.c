@@ -5,9 +5,9 @@
 /**
  * main - entry point
  *
- * Description: Positive or Negative of the input value.
+ * Description: the value of variable positive of negative
  *
- * Return : 0 (Success)
+ * Return: 0 (Success)
 */
 
 int main(void)
