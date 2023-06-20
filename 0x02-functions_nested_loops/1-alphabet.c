@@ -1,20 +1,15 @@
 #include "main.h"
 
 /**
- * main - Entry point
- *
- * Descrption: print the alphabet, in lowercase
- *
- * Return: Always 0 (Success)
+ * print_alphabet - the alphabet a - z
+ *            and utilizes on the _putchar function to print
 */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 	int ch;
 
 	for (ch = 'a'; ch <= 'z'; ch++)
 		_putchar(ch);
-	_putchar('\n')
-
-		return (0);
+	_putchar('\n');
 }
