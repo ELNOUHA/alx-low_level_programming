@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints the numbers from 0 to 9
- *                 do not print 2 and 4
+ * print_most_numbers - prints 0 - 9 apart
+ *                 from 2 and 4 and you can
  *                 only using _putchar twice
  * Return: Always 0 (Success)
 */
@@ -17,7 +17,7 @@ void print_most_numbers(void)
 		{
 			continue;
 		}
-		_putchar(num);
+		_putchar(num + 48);
 	}
-	_putchar('\n')
+	_putchar('\n');
 }
