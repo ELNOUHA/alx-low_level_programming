@@ -1,4 +1,4 @@
-#include "main."
+#include <stdio.h>
 
 /**
  * main - program that prints either number
@@ -12,20 +12,21 @@ int main(void)
 {
 	int num;
 
-	for (num = 1; num <= 100; num++)
-	{
-		if (num % 3 == 0 && !(num % 5 == 0))
-			printf("Fizz");
-		else if (num % 5 == 0 && !(num % 3 == 0))
-			printf("Buzz");
-		else if (num % 3 == 0 && num % 5 == 0)
-			printf("FizzBuzz");
+	while (num++ < 100)
+		if ((num % 3 == 0) && (num % 5 == 0))
+			printf("FizzBuzz ");
+		else if ((num % 3) == 0)
+			printf("Fizz ");
+		else if ((num % 5) == 0)
+		{
+			if (num != 100)
+				printf("Buzz ");
+			else
+				printf("Buzz");
+		}
 		else
 			printf("%d ", num);
-		if (num != 100)
-			printf(" ");
-		else
-			printf("\n");
-	}
+	printf("\n");
+
 	return (0);
-i}
+}
